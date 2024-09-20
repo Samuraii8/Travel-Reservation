@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Entity.Concrete
 {
     public class Destination
     {
+        [Key]
         public int DestinationID { get; set; }
         public string? City { get; set; }
         public string? DayNight { get; set; }
